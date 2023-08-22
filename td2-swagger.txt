@@ -44,7 +44,7 @@ paths:
               schema:
                 $ref: '#/components/schemas/Teacher'
   
-  /teacher/{Toky}:
+  /teacher/{toky}:
     get:
       tags:
         - teacher
@@ -52,7 +52,7 @@ paths:
       description: ''
       operationId: getTeacherByName
       parameters:
-        - name: Toky
+        - name: toky
           in: path
           description: 'The name that needs to be fetched. Use teacher1 for testing. '
           required: true
@@ -216,7 +216,7 @@ components:
           type: array
           items:
             type: string
-            example: '[ - PROG1, - PROG2,  - Web1 , - Donnée1]'
+            example: '[ prog1,  prog2,   web1 , données1]'
              
               
       xml:
